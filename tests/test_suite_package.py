@@ -22,7 +22,7 @@ class StandaloneSuiteTests(unittest.TestCase):
         self.addCleanup(self.temp.cleanup)
         self.workspace = Path(self.temp.name).resolve()
         self.suite = self.workspace / 'a-different-location' / 'suite'
-        shutil.copytree(ROOT, self.suite, ignore=shutil.ignore_patterns('.runtime', '.maintenance', '__pycache__', '*.pyc'))
+        shutil.copytree(ROOT, self.suite, ignore=shutil.ignore_patterns('.git', '.runtime', '.maintenance', '__pycache__', '*.pyc'))
         self.cwd = self.workspace / 'foreign-cwd'
         self.cwd.mkdir()
         self.env = {k: v for k, v in os.environ.items() if k not in ('PYTHONPATH', 'PYTHONHOME')}

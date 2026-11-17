@@ -40,7 +40,7 @@ def package_files(root):
     result = {}
     for parent, directories, files in os.walk(root, followlinks=False):
         parent_path = Path(parent)
-        directories[:] = sorted(name for name in directories if name != '__pycache__' and not (parent_path == root and name in ('.runtime', '.maintenance')))
+        directories[:] = sorted(name for name in directories if name != '__pycache__' and not (parent_path == root and name in ('.runtime', '.maintenance', '.git')))
         for name in directories + files:
             if (parent_path / name).is_symlink():
                 raise ValueError('packaged symlink is not allowed: ' + str(parent_path / name))

@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
   "suite_name": "vllm-ascend-throughput-skills",
-  "release_id": "20261112T123316Z-build-integrity",
+  "release_id": "20261117T121016Z-github-release",
   "main_skill": "vllm-ascend-throughput-optimization",
   "skills": [
     "vllm-ascend-throughput-optimization",
@@ -26,6 +26,8 @@
     "module_cli_layout_changed": true
   },
   "files_sha256": {
+    ".gitignore": "26bc7a096a0ecea61f8d5fce18bcbd14f70023249129b8e0178d18359b4e2187",
+    "README.md": "0f3fe55ec097f36538a602d61ddbca1bb7d0aeaa1585818be32e483255616fb0",
     "SKILL.md": "8087e72f039b694f836d0a3d3bf6608af868ca595f391bff3ba6cbfdbfcbc293",
     "assets/campaign-state.example.json": "ffd3d5f25e7ea210f36de738e67d0fad71733ce337722b2ca85da8b313a53bff",
     "assets/handoff-input.example.json": "ba0216c51e9bae73880f749b8de5e3ed75b44270eb042ba132d65c2228a78f41",
@@ -891,10 +893,10 @@
     "scripts/register_skills.py": "104500ff94a89c1fd5ef3cad9432400dc26297ff036d35ffb53f854cde702ffb",
     "scripts/run_tests.py": "445c51b01898bf68771ece05f6ea7939ba04907f93062526c0dba492cbe06b93",
     "scripts/setup_runtime.py": "0f8d3e2779e6f9c9b2e5a9fdb216a066d76c63c8627632c0d81b3ca0155931fc",
-    "scripts/verify_suite.py": "159ee747916d3a6a4a614ccb4c24a8689af63305dd813ba1334ff390b0096445",
-    "tests/test_suite_package.py": "866ff79176316ca29431f57bdb19992c65a0908e2d314885216c0278c9ae9ad8"
+    "scripts/verify_suite.py": "76d97fcecf1ebb6305fe4b73437332d2ea1f7242f32cdbf494981ef5fec6c31b",
+    "tests/test_suite_package.py": "6014de7a8007ff1ce16c93275a2754dfd259563e795f76cfa872bd0765f86c2f"
   },
-  "previous_release_id": "20261112T091652Z-modular",
+  "previous_release_id": "20261112T123316Z-build-integrity",
   "role_skills": {
     "measurement": "evaluate",
     "profiling": "diagnose",
